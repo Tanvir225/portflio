@@ -223,8 +223,10 @@ footer{
 
 /* mobile responsive */
 @media screen and (max-width:576px) {
+    
+    
     .header{
-        padding:0;
+        padding:15px;
         margin: 0;
         background-color: #FFF8F3;
         background-image: none;
@@ -260,11 +262,14 @@ footer{
     .about-container{
         flex-direction: column;
     }
-    .about,.banner,.section-about,.about-descrpition{
+    .about,.banner,.section-about,.about-descrpition,.skill-box{
         text-align: justify;
         padding: 15px;
     }
-
+    .resume-container{
+        padding: 30px;
+        text-align: justify;
+    }
     
     .resume-header{
         font-size: 1.3em;
@@ -311,7 +316,7 @@ footer{
         margin-bottom: 16px;
     }
     footer{
-        padding: 50px;
+        padding: 30px;
     }
     .footer-column{
         width: 80%;
