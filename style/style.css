@@ -224,7 +224,8 @@ footer{
 /* mobile responsive */
 @media screen and (max-width:576px) {
     .header{
-        padding: 0px 0;
+        padding:0;
+        margin: 0;
         background-color: #FFF8F3;
         background-image: none;
     }  
@@ -242,9 +243,14 @@ footer{
 
     .banner{
         flex-direction: column;
+        padding: 0px;
+        margin: 0;
     }
     .profile-pic{
         width: 100%;
+        margin-bottom: -14px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     main{
@@ -254,9 +260,12 @@ footer{
     .about-container{
         flex-direction: column;
     }
-    .about,.banner,.section-about{
+    .about,.banner,.section-about,.about-descrpition{
+        text-align: justify;
         padding: 15px;
     }
+
+    
     .resume-header{
         font-size: 1.3em;
     }
@@ -290,9 +299,11 @@ footer{
     }
     .resume-column{
         flex-direction: column;
+        justify-content: center;
     }
     .column-header{
         font-size: 1.4em;
+        text-align: left;
     }
     .column-des{
         line-height: 1.3em;
