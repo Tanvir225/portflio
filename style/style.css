@@ -188,14 +188,14 @@ main{
 
 footer{
     background-color: #FFF8F3;
-    padding: 100px;
+    padding: 200px;
     margin-top:50px;
 }
 
 .footer-container{
     display: flex;
-    justify-content: center;
-    gap: 100px;
+    justify-content: space-around;
+    gap: 50px;
 }
 
 .column-header{
@@ -219,4 +219,96 @@ footer{
 .icon{
     display: flex;
     gap: 20px;
+}
+
+/* mobile responsive */
+@media screen and (max-width:576px) {
+    .header{
+        padding: 0px 0;
+        background-color: #FFF8F3;
+        background-image: none;
+    }  
+    
+    hr{
+        width: 80%;
+    }
+
+    nav{
+        flex-direction: column;
+        padding: 0px;
+        margin: 0px;
+        margin-top: -20px;
+    }
+
+    .banner{
+        flex-direction: column;
+    }
+    .profile-pic{
+        width: 100%;
+    }
+
+    main{
+        max-width: 576px;
+        margin: 0 auto;
+    }
+    .about-container{
+        flex-direction: column;
+    }
+    .about,.banner,.section-about{
+        padding: 15px;
+    }
+    .resume-header{
+        font-size: 1.3em;
+    }
+    .education-title,.title,.institute{
+        font-size: 1.1em;
+    }
+    .resume-column{
+        gap: 30px;
+    }
+    .qualification{
+        margin-bottom: 20px;
+    }
+    .title{
+        color: #1f2aa6;
+        font-weight: bolder;
+    }
+
+    .institute{
+        color: #9b1fa6;
+    }
+    .banner-title{
+        font-size: 1.2em;
+    }
+    .btn-primary {
+        margin-bottom: 10px;
+        padding: 20px 15px;
+    }
+
+    .skill-container{
+        flex-direction: column;
+    }
+    .resume-column{
+        flex-direction: column;
+    }
+    .column-header{
+        font-size: 1.4em;
+    }
+    .column-des{
+        line-height: 1.3em;
+        padding: 0;
+        margin-bottom: 16px;
+    }
+    footer{
+        padding: 50px;
+    }
+    .footer-column{
+        width: 80%;
+    }
+    .footer-container{
+        flex-direction: column;
+        gap: 50px;
+    }
+
+
 }
