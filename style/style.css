@@ -50,6 +50,11 @@ header li{
     font-weight: 700;
     padding: 15px 35px;
 }
+.btn-transparent{
+    background-color: transparent;
+    color: #FD6E0A;
+    border: 1px solid #FD6E0A ;
+}
 
 .banner{
     padding: 30px 30px 0px 150px;
@@ -242,7 +247,10 @@ footer{
         margin: 0px;
         margin-top: -20px;
     }
-
+    
+    nav>ul{
+        margin-right: 10px;
+    }
     .banner{
         flex-direction: column;
         padding: 0px;
@@ -297,6 +305,7 @@ footer{
     .btn-primary {
         margin-bottom: 10px;
         padding: 20px 15px;
+        font-size: 15px;
     }
 
     .skill-container{
@@ -325,6 +334,125 @@ footer{
         flex-direction: column;
         gap: 50px;
     }
+    .btn-transparent{
+        background-color: transparent;
+        color: #FD6E0A;
+        border: 1px solid #FD6E0A ;
+    }
+    
 
 
+}
+
+/* tab view */
+
+@media screen and (min-width:576px) and (max-width:992px) {
+    main{
+        max-width: 992px;
+        margin: 0 auto;
+    }
+
+    .header{
+        padding:0px 20px;
+        margin: 0;
+        background-color: #FFF8F3;
+        background-image: none;
+    }  
+    
+    hr{
+        width: 80%;
+    }
+
+    nav{
+        flex-direction: column;
+        padding: 0px;
+        margin: 0px;
+        margin-top: -20px;
+    }
+    .banner{
+        flex-direction: column;
+        padding: 0px;
+        margin: 0;
+    }
+    .profile-pic{
+        width: 100%;
+        margin-bottom: -20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .about,.banner,.section-about,.about-descrpition,.skill-box{
+        text-align: justify;
+        padding: 20px;
+    }
+       
+    .resume-container{
+        padding: 20px;
+        text-align: justify;
+    }
+    
+    .resume-header{
+        font-size: 1.3em;
+    }
+    .education-title,.title,.institute{
+        font-size: 1.1em;
+    }
+   
+    .title{
+        color: #1f2aa6;
+        font-weight: bolder;
+    }
+
+    .institute{
+        color: #9b1fa6;
+    }
+    .banner-title{
+        font-size: 1.2em;
+    }
+    .btn-primary {
+        margin-bottom: 10px;
+        padding: 20px 15px;
+    }
+    .skill{
+        padding: 20px 20px;
+    }
+    .skill-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 30px 75px 0;
+
+    }
+    .resume-column{
+        flex-direction: column;
+        padding: 15px;
+    }
+    .column-header{
+        font-size: 1.2em;
+        text-align: left; 
+    }
+    .column-des{
+        line-height: 1.2em;
+        padding: 0;
+        margin-bottom: 10px;
+    }
+    footer{
+        padding: 25px;
+    }
+    .footer-column{
+        width: 80%;
+    }
+    .footer-container{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .btn-primary{
+        margin-right: 20px;
+    }
+    .btn-transparent{
+        background-color: transparent;
+        color: #FD6E0A;
+        border: 1px solid #FD6E0A ;
+    }
+
+    
 }
