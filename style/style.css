@@ -137,6 +137,9 @@ main{
     border-radius: 5px;
     background: #FFF;
     box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.06);
+    width: 50%;
+    height: auto;
+    
 }
 .skil-title{
     font-weight: bold;
@@ -167,18 +170,32 @@ main{
 
 .resume-column{
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 50px;
+}
+
+.my-education-container{
+    padding: 20px;
+    width: 50%;
+}
+
+.my-experience-container{
+    padding: 20px;
+    width: 50%;
 }
 .title{
     color: #474747;
-    font-size: 30px;
+    font-size: 1.5em;
 }
 
 .education-title{
+    font-size: 1.2em;
     color:#474747;
 }
 
 .institute{
+    font-size: 1em;
     color: #474747;
 }
 
@@ -279,14 +296,25 @@ footer{
         text-align: justify;
     }
     
+    
     .resume-header{
         font-size: 1.3em;
     }
     .education-title,.title,.institute{
-        font-size: 1.1em;
+        font-size: 1em;
+        line-height: 1.5em;
     }
     .resume-column{
-        gap: 30px;
+        gap: 5px;
+    }
+    .my-education-container{
+        padding: 20px;
+        width: 100%;
+    }
+    
+    .my-experience-container{
+        padding: 20px;
+        width: 100%;
     }
     .qualification{
         margin-bottom: 20px;
@@ -307,9 +335,15 @@ footer{
         padding: 20px 15px;
         font-size: 15px;
     }
+    .skill{
+        width: 80%;
+        height: auto;
+    }
 
     .skill-container{
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
     .resume-column{
         flex-direction: column;
@@ -413,27 +447,39 @@ footer{
         padding: 20px 15px;
     }
     .skill{
-        padding: 20px 20px;
+        width: 43%;
+        height: auto;
     }
     .skill-container{
         display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-between;
-        margin: 30px 75px 0;
+        justify-content: space-evenly;
 
     }
     .resume-column{
-        flex-direction: column;
-        padding: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .my-education-container{
+        width: 41%;
+    }
+    
+    .my-experience-container{
+        width: 41%;
     }
     .column-header{
         font-size: 1.2em;
         text-align: left; 
     }
+    hr{
+        display: none;
+    }
     .column-des{
-        line-height: 1.2em;
+        line-height: 1.1em;
         padding: 0;
-        margin-bottom: 10px;
     }
     footer{
         padding: 25px;
